@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.navbar-nav {
+    margin-right: 5rem;
+  }
+
+.navbar-brand {
+    margin-left: 5rem;
+}
+
+
+.textoChico {
+    font-size: .8rem;
+}
+
+.carousel-item img {
+    filter: brightness(50%);
+}
