@@ -1,5 +1,3 @@
-// alert("hola js externo");
-// confirm("Desde continuar en la página?")
 
 function calPrecioFinal() {
     console.log("ingreso a calcular precio");
@@ -24,3 +22,18 @@ function calPrecioFinal() {
     // modificando dinámicamente el html para colocar el precio total en la pantalla
     document.getElementById("valorTotal").value=precioTotal;
 }
+
+// Boton flotante
+(function() {
+    //a partir de que punto del scroll vertical de la ventana mostrará el botón
+    const ishow = 115
+    const $divtop = document.getElementById("div-totop")
+    window.addEventListener("scroll", function() {
+        if(document.documentElement.scrollTop > ishow){
+            $divtop.style.display = "inherit"
+        }
+        else {
+            $divtop.style.display = "none"
+        }
+    })
+  })()
